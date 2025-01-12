@@ -1,0 +1,399 @@
+*{
+    font-family: "Lato", serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Style autofilled inputs */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #ffffff !important; /* Set your desired background color */
+    color: #000000 !important; /* Set your desired text color */
+    box-shadow: 0 0 0px 1000px #ffffff inset !important; /* Ensures consistent background */
+    transition: background-color 5000s ease-in-out 0s; /* Prevents the autofill highlight from reappearing */
+}
+
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{
+    appearance: none;
+    margin: 0;
+}
+
+.absolute-parent{
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* margin:150px 0px ; */
+    
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin:80px 160px ;
+    height: 100%;
+}
+
+
+.flex-left{
+    /* flex: 1; */
+    width: 50%;
+    height: max-content;
+}
+
+
+.flex-right{
+    box-shadow: 0px 0px 60px 20px #0408131A;
+    padding: 200px;
+    /* flex: 1; */
+    width: 50%;
+}
+
+
+
+.flex-left img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0px;
+}
+
+.flex-left h1{
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.flex-left p{
+    line-height: 25px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #737373;
+    margin-bottom: 260px;
+}
+
+.form-line{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 30px;
+    
+}
+
+.form-line input,select{
+    border: 2px solid #F0F0F0;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 238px;
+    border-radius: 2px;
+
+    
+}
+
+.form-line input::placeholder{
+    color: #737373;
+}
+
+ select{
+    background-color: #ffffff;
+    width: 270px;
+}
+
+.form-line label{
+    line-height: 14px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 14px;
+    
+}
+
+.date-container{
+    position: relative;
+}
+
+.date-container img{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right:20px;
+    bottom: 15px;
+    pointer-events: none;
+    
+}
+
+select,option{
+  color: #737373;
+}
+
+
+input[type="date"] {
+    content: attr(placeholder) !important;
+    color: #aaa;
+  }
+  input[type="date"]:focus:before,
+  input[type="date"]:valid:before {
+    content: "";
+  }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* Makes the calendar icon visible on dark backgrounds */
+    cursor: pointer;
+  }
+
+
+.form-line div{
+    display: flex;
+    flex-direction: column;
+}
+.form-line input:focus,select:focus{
+    outline: none;
+    border: 3px solid #2EC4B6;
+}
+
+.form-container{
+   display: flex;
+   flex-direction: column; 
+}
+
+
+
+
+input[type="password"]:focus{
+    background-color: white;
+}
+
+.register{
+    width: 100%;
+    background-color: #2EC4B6;
+    padding: 20px;
+    color: #FFFFFF;
+    font-weight: 600;
+    line-height: 16px;
+    font-size: 16px;
+    border-radius: 2px;
+    border:none;
+}
+
+.register:hover{
+    background-color: #2da4b9;
+}
+.form-line a:hover{
+    color: #2da4b9;
+}
+
+.form-line a{
+    color: #2EC4B6;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height:25px ;
+}
+
+.form-line p{
+    font-weight: 400;
+    
+}
+.activity{
+    width: 100%;
+    
+}
+
+.small-p{
+    display: none;
+    font-weight: 300;
+    color: #737373;
+    font-size: 16px;
+}
+.big-p{
+    display: block;
+
+}
+
+
+
+.password{
+    width: 100%;
+    margin: 0;
+    position: relative;
+
+}
+
+.password-funnel{
+    width: 100%;
+}
+
+.password input{
+    width:100%;
+    margin: 0;
+    padding:15px 0px 15px 0px;
+
+}
+
+.passimg{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right:20px;
+    bottom: 15px;
+    pointer-events: none;
+    
+}
+
+
+@media only screen and (max-width: 768px){
+
+
+}
+
+@media only screen and (max-width: 768px){
+
+
+}
+
+@media only screen and (max-width: 768px){
+    .form-line{
+        flex-direction: column;
+    }
+
+    .absolute-parent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+        
+    }
+    
+    
+    .container{
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin:0px ;
+        height: 100%;
+        padding: 20px;
+        
+    }
+    
+    
+    .flex-left{
+        /* flex: 1; */
+        width: 100%;
+        margin:0px 80px ;
+        margin-bottom: 50px;
+        
+    }
+
+    .flex-left p{
+        line-height: 25px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #737373;
+        margin-bottom: 0px;
+    }
+    
+    
+    .flex-right{
+        box-shadow: 0px 0px 60px 20px #0408131A;
+        padding: 0px;
+        margin-bottom: 80px;
+        padding-bottom: 20px;
+        position: relative;
+        /* flex: 1; */
+        width: 100%;
+        
+    }
+    .password input{
+        width: 100%;
+    
+    }
+    .flex-left img{
+        width: 40px;
+        height: 40px;
+        margin-top: 30px;
+        
+    }
+
+    .flex-left h1{
+        line-height: 30px;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    
+    }
+    .small-p{
+        display: block;
+    }
+    .big-p{
+        display: none;
+    }
+
+    .form-line input,select{
+        border: 2px solid #F0F0F0;
+        padding: 15px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        max-width: 100%;
+        border-radius: 2px;
+        margin-bottom: 10px;
+    
+        
+    }
+
+   
+
+    .form-line{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        gap: 20px;
+        margin-bottom: 0px;
+        padding: 20px;
+        padding-bottom: 0px;
+        
+    }
+    .register{
+        width: 270px;
+    }
+
+    .activity{
+        width: 270px;   
+    }
+
+    .password{
+        width: 235px;
+    }
+
+    .passimg{
+        right:-25px;
+        bottom: 24px;
+    }
+
+    
+.date-container img{
+    right:40px;
+    bottom: 27px;
+    
+}
+
+.form-p{
+    position: absolute;
+    bottom: -80px;
+}
+    
+}
+
