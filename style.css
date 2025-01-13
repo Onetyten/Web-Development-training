@@ -322,6 +322,7 @@ input[type="password"]:focus{
 .date-container img{
     right:15px;
     bottom: 27px;
+    display:none;
     
 }
 
@@ -473,4 +474,12 @@ input[type="password"]:focus{
 }
     
 }
+
+@media only screen and (max-width: 400px){
+    .date-container img{
+        display: inline;
+        
+    }
+}
+
 
