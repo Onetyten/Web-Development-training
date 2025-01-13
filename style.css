@@ -19,6 +19,14 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     appearance: none;
     margin: 0;
 }
+html{
+    overflow-x: hidden;
+    width: 100vw;
+}
+body{
+    overflow-x: hidden;
+    max-width: 100vw;
+}
 
 .absolute-parent{
     max-width: 100vw;
@@ -26,7 +34,6 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* margin:150px 0px ; */
     
 }
 
@@ -37,6 +44,7 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     align-items: center;
     width: 100%;
     margin:80px 160px ;
+    gap: 130px;
     height: 100%;
 }
 
@@ -50,7 +58,7 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
 .flex-right{
     box-shadow: 0px 0px 60px 20px #0408131A;
-    padding: 200px;
+    padding: 40px;
     /* flex: 1; */
     width: 50%;
 }
@@ -139,6 +147,7 @@ select,option{
 input[type="date"] {
     content: attr(placeholder) !important;
     color: #aaa;
+    appearance: textfield;
   }
   input[type="date"]:focus:before,
   input[type="date"]:valid:before {
@@ -223,6 +232,7 @@ input[type="password"]:focus{
 
 .password{
     width: 100%;
+    appearance: textfield;
     margin: 0;
     position: relative;
 
@@ -250,15 +260,73 @@ input[type="password"]:focus{
 }
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1440px){
+    .container{
+        margin:80px 123px ;
+        gap: 130px;
+    }
 
+}
+
+@media only screen and (max-width: 1280px){
+    .form-line input,select{
+        border: 2px solid #F0F0F0;
+        padding: 15px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        width: 200px;
+        border-radius: 2px;
+        margin-bottom: 10px;
+    
+        
+    }
+
+    .gender-select{
+        width: 233px;
+        appearance: textfield;
+    }
+
+   
+
+    .form-line{
+        display: flex;
+        width: 100%;
+        justify-content:center;
+        gap: 20px;
+        margin-bottom: 0px;
+        padding: 20px;
+        padding-bottom: 0px;
+        
+    }
+    .register{
+        width: 295px;
+    }
+
+    .activity{
+        width: 485px;
+        appearance: textfield; 
+    }
+
+    .password{
+        width: 295px;
+        appearance: textfield; 
+    }
+
+    .passimg{
+        right:70px;
+        bottom: 24px;
+    }
+
+    
+.date-container img{
+    right:15px;
+    bottom: 27px;
+    
+}
 
 }
 
-@media only screen and (max-width: 768px){
-
-
-}
 
 @media only screen and (max-width: 768px){
     .form-line{
@@ -285,15 +353,14 @@ input[type="password"]:focus{
         margin:0px ;
         height: 100%;
         padding: 20px;
+        gap: 30px;
         
     }
     
     
     .flex-left{
-        /* flex: 1; */
         width: 100%;
-        margin:0px 80px ;
-        margin-bottom: 50px;
+        margin:0px 0px ;
         
     }
 
@@ -334,6 +401,10 @@ input[type="password"]:focus{
         margin-bottom: 20px;
     
     }
+
+    .flex-left p{
+        margin-bottom: 20px;
+    }
     .small-p{
         display: block;
     }
@@ -347,11 +418,16 @@ input[type="password"]:focus{
         font-size: 14px;
         font-weight: 400;
         line-height: 20px;
-        max-width: 100%;
+        width: 260px;
         border-radius: 2px;
         margin-bottom: 10px;
     
         
+    }
+
+    .gender-select{
+        width: 295px;
+        appearance: textfield;
     }
 
    
@@ -367,11 +443,12 @@ input[type="password"]:focus{
         
     }
     .register{
-        width: 270px;
+        width: 295px;
     }
 
     .activity{
-        width: 270px;   
+        width: 295px;
+        appearance: textfield; 
     }
 
     .password{
@@ -379,13 +456,13 @@ input[type="password"]:focus{
     }
 
     .passimg{
-        right:-25px;
+        right:-50px;
         bottom: 24px;
     }
 
     
 .date-container img{
-    right:40px;
+    right:60px;
     bottom: 27px;
     
 }
